@@ -1,0 +1,23 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+I should clarify that this module is NOT a standalone tree-sitter
+module. It is supposed to be used with an upcoming tree-sitter
+integration in Emacs core.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+To build the language definition for a particular language, run
+
+    ./build.sh <language>
+
+e.g.,
+
+    ./build.sh html
+
+The dynamic module will be in dist directory
+
+To build all modules at once, run
+
+    ./batch.sh
+
+This gives you C, JSON, Go, HTML, Javascript, CSS, Python, Typescript
+(tsx), C# (csharp), C++ (cpp), Rust. More can be added to batch.sh
+unless it's directory structure is not standard.
